@@ -5,8 +5,10 @@
 
 typedef struct s_manager
 {
-    employee* emp;
     struct p_manager* private;
+    int (*f_get_name)(const struct s_manager* _obj, char** _name);
+    int (*f_get_age)(const struct s_manager* _obj, int* _age);
+    int (*f_get_salary)(const struct s_manager* _obj, int* _salary);
     int (*f_get_num_of_employees)(const struct s_manager* _obj, int* _num_of_employees);
     int (*f_constructor)(struct s_manager* _obj, employee* emp_obj, int _num_of_employees);
     void (*f_destructor)(struct s_manager* _obj);

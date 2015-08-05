@@ -1,8 +1,1 @@
-Finish going over the following modules, and push them to the github
-1. Finish Common module -    V
-2. Finish Employee module - V 
-3. Finish Manager module - V
-4. See that it compiles - V
-5. Add emp to private
-6. Add getters from the manager instead of the employee
-7. Check why the destructor of the manager doesn't work
+No tasks for now.

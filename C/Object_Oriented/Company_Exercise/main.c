@@ -58,19 +58,19 @@ int main()
         }
 
         printf(" name: %s, age: %d, salary %d\n", name, age, salary);
-        if (!manag->emp->f_get_name(manag->emp, &name))
+        if (!manag->f_get_name(manag, &name))
         {
             printf(" ERROR in getting name!\n");
             rc = 1;
 
         }
-        if (!manag->emp->f_get_age(manag->emp, &age))
+        if (!manag->f_get_age(manag, &age))
         {
             printf(" ERROR in getting age!\n");
             rc = 1;
 
         }
-        if (!manag->emp->f_get_salary(manag->emp, &salary))
+        if (!manag->f_get_salary(manag, &salary))
         {
             printf(" ERROR in getting salary!\n");
             rc = 1;
@@ -82,13 +82,12 @@ int main()
             rc = 1;
 
         }
-
         printf(" name: %s, age: %d, salary %d, num_of_employees: %d\n", name, age, salary, num_of_employees);
 
     }while(0);
 
     delete(emp,"employee");
-    //delete(manag, "manager");
+    delete(manag, "manager");
     free(name);
     return rc;
 
