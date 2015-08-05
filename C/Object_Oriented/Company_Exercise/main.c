@@ -28,6 +28,7 @@ int main()
         {
             printf(" ERROR in new!\n");
             rc = 1;
+            break;
 
         }
 
@@ -35,6 +36,7 @@ int main()
         {
             printf(" ERROR in new!\n");
             rc = 1;
+            break;
 
         }
 
@@ -42,18 +44,21 @@ int main()
         {
             printf(" ERROR in getting name!\n");
             rc = 1;
+            break;
 
         }
         if (!emp->f_get_age(emp, &age))
         {
             printf(" ERROR in getting age!\n");
             rc = 1;
+            break;
 
         }
         if (!emp->f_get_salary(emp, &salary))
         {
             printf(" ERROR in getting salary!\n");
             rc = 1;
+            break;
 
         }
 
@@ -62,24 +67,28 @@ int main()
         {
             printf(" ERROR in getting name!\n");
             rc = 1;
+            break;
 
         }
         if (!manag->f_get_age(manag, &age))
         {
             printf(" ERROR in getting age!\n");
             rc = 1;
+            break;
 
         }
         if (!manag->f_get_salary(manag, &salary))
         {
             printf(" ERROR in getting salary!\n");
             rc = 1;
+            break;
 
         }
         if (!manag->f_get_num_of_employees(manag, &num_of_employees))
         {
             printf(" ERROR in getting salary!\n");
             rc = 1;
+            break;
 
         }
         printf(" name: %s, age: %d, salary %d, num_of_employees: %d\n", name, age, salary, num_of_employees);
